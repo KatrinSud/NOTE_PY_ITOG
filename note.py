@@ -15,12 +15,12 @@ def main():
             print("Заметка успешно сохранена.")
 
         elif command == "2":
-            print("Введите идентификатор заметки:")
+            print("Введите номер заметки:")
             note_id = int(input())
             note_manager.read_note(note_id)
 
         elif command == "3":
-            print("Введите идентификатор заметки:")
+            print("Введите номер заметки:")
             note_id = int(input())
             print("Введите новый заголовок заметки:")
             new_title = input()
@@ -29,7 +29,7 @@ def main():
             note_manager.edit_note(note_id, new_title, new_body)
 
         elif command == "4":
-            print("Введите идентификатор заметки:")
+            print("Введите номер заметки:")
             note_id = int(input())
             note_manager.delete_note(note_id)
 
@@ -40,7 +40,7 @@ def main():
             break
 
         else:
-            print("Неверная команда. Пожалуйста, повторите ввод.")
+            print("Неверный номер. Пожалуйста, повторите ввод.")
 
 
 if __name__ == "__main__":
